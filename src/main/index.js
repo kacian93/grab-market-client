@@ -1,6 +1,8 @@
 import axios from "axios";
 import "./css/index.css"
 import React from "react";
+import App from "../App";
+import {BrowserRouter as Router, Link} from 'react-router-dom'
 
 function MainPageComponent(){
     const [grabProducts, setProducts] = React.useState([]);
@@ -31,20 +33,22 @@ function MainPageComponent(){
                     {grabProducts.map(function(product, index) {
                         return (
                             <div className={"product-card"}>
-                                <div>
-                                    <img className={"product-img"} src={product.imageUrl}/>
-                                </div>
-                                <div className={"product-contents"}>
-                                    <span className={"product-name"}>
-                                        {product.name}
-                                    </span>
-                                    <span className={"product-price"}>{product.price}</span>
-                                    <div className={"product-seller"}>
-                                        <img className={"product-avatar"} src={"img/icons/avater.png"}/>
-                                        <span>{product.seller}</span>
-
+                                <Link className={"product-link"} to={"/product"}>
+                                    <div>
+                                        <img className={"product-img"} src={product.imageUrl}/>
                                     </div>
-                                </div>
+                                    <div className={"product-contents"}>
+                                        <span className={"product-name"}>
+                                            {product.name}
+                                        </span>
+                                        <span className={"product-price"}>{product.price}</span>
+                                        <div className={"product-seller"}>
+                                            <img className={"product-avatar"} src={"img/icons/avater.png"}/>
+                                            <span>{product.seller}</span>
+
+                                        </div>
+                                    </div>
+                                </Link>
                             </div>)
                     })}
                 </div>
