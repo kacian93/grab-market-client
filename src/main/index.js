@@ -17,14 +17,7 @@ function MainPageComponent(){
         });
     },[]);
 
-    return (
-        <div>
-            <div id="header">
-                <div id="header-area">
-                    <img src="/img/icons/logo.png" alt="logo" />
-                </div>
-            </div>
-            <div id="body">
+    return (<div>
                 <div id="banner">
                     <img src="/img/banners/banner1.png" alt="배너이미지" />
                 </div>
@@ -53,8 +46,6 @@ function MainPageComponent(){
                             </Link>)
                     })}
                 </div>
-            </div>
-            <div id="footer"></div>
         </div>
 
     );

@@ -1,3 +1,47 @@
-html, bdoy #root, #root>div{
+* {
+  margin:0;
+  padding: 0;
+}
+html, body #root, #root>div{
   height:  100vh;
 }
+#body > h1{
+   margin-top: 16px;
+ }
+
+#header{
+   display: flex;
+   justify-content: center;
+   height: 64px;
+   border-bottom: 1px solid gray;
+ }
+#body{
+  height: 100%;
+  width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+#header-area{
+  display: flex;
+  align-items: center;
+  width: 1024px;
+  height: 100%;
+}
+#header-area > img{
+  width: 128px;
+  height: 36px;
+}
+#banner{
+  width: 100%;
+  background-color: yellow;
+}
+#banner > img{
+  width:100%;
+  height: 300px;
+}
+#footer{
+   height: 200px;
+   background-color: rgb(230,230,230);
+ }
+
