@@ -21,7 +21,7 @@ function MainPageComponent(){
                 <div id="banner">
                     <img src="/img/banners/banner1.png" alt="배너이미지" />
                 </div>
-                <h1>판매되는 상품들</h1>
+                <h1>Sell Productn</h1>
                 <div id="product-list">
                     {grabProducts.map(function(product, index) {
                         return (
