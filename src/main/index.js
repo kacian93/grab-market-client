@@ -32,7 +32,7 @@ function MainPageComponent(){
                 <div id="product-list">
                     {grabProducts.map(function(product, index) {
                         return (
-                            <Link className={"product-link"} to={"/products/" + index}>
+                            <Link className={"product-link"} to={"/products/" + product.id}>
 
                                 <div  className={"product-card"}>
                                         <div>
