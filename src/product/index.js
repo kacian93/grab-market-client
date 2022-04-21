@@ -1,4 +1,12 @@
+
+import { useParams, BrowserRouter as router } from 'react-router-dom';
+
 function ProductPage(){
-    return <h1>product</h1>
+
+    const {id} = useParams();
+    return
+    (
+            <h1>product {id} </h1>
+    )
 }
 export default ProductPage;
